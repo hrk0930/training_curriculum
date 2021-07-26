@@ -8,11 +8,20 @@
   <% end %>
 
 
+   HEAD
+<div>
+
+
+    1a6ed3b8face8fcfcea8697ea47941f08a982aa9
   <div class='calendar'>
     <% @week_days.each do |day| %>
       <div class='item'>
         <div class='date'>
+             second_training
+          <%= day[:month] %>/<%= day[:date] %><%= day[:wdays] %>
+
           <%= day[:month] %>/<%= day[:date] %> <%= day[:wdays] %>
+             master
         </div>
         <ul class='content'>
         <% if day[:plans].length != 0 %>
